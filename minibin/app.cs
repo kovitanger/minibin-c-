@@ -68,7 +68,7 @@ namespace RecycleBinApp
             updateThread.IsBackground = true;
             updateThread.Start();
 
-            Application.Run(context); // запускаем без показа окна
+            Application.Run(context); 
         }
 
         static void OpenRecycleBin(object sender, EventArgs e)
@@ -132,7 +132,7 @@ namespace RecycleBinApp
             while (true)
             {
                 UpdateIcon();
-                Thread.Sleep(3000); // периодическое обновление
+                Thread.Sleep(3000);
             }
         }
 
